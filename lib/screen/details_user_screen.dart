@@ -92,16 +92,29 @@ class UserDetailsScreenWidget extends StatelessWidget {
                 title: 'Bs:',
                 detail: user.company.bs,
               ),
-              const DetailsInfo(
-                title: 'Catch Phrase:',
-                detail: '',
+              const SizedBox(
+                height: 16.0,
               ),
-              Text(
-                user.company.catchPhrase,
-                style: const TextStyle(
-                    fontStyle: FontStyle.italic,
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.w400),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Catch Phrase:',
+                    style: Theme.of(context).textTheme.headline2!.copyWith(
+                          color: const Color(0xff000000),
+                        ),
+                  ),
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width - 200,
+                    child: Text(
+                      user.company.catchPhrase,
+                      style: const TextStyle(
+                          fontStyle: FontStyle.italic,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(
                 height: 40.0,
