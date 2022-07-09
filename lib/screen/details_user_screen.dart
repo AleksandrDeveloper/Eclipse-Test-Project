@@ -62,7 +62,7 @@ class UserDetailsScreenWidget extends StatelessWidget {
                 height: 20.0,
               ),
               DetailsInfo(
-                title: 'Name:',
+                title: 'Имя:',
                 detail: user.name,
               ),
               DetailsInfo(
@@ -70,22 +70,22 @@ class UserDetailsScreenWidget extends StatelessWidget {
                 detail: user.email,
               ),
               DetailsInfo(
-                title: 'Phone:',
+                title: 'Телефон:',
                 detail: user.phone,
               ),
               DetailsInfo(
-                title: 'Web site:',
+                title: 'Сайт:',
                 detail: user.website,
               ),
               const SizedBox(
                 height: 40.0,
               ),
               const DetailsInfo(
-                title: 'Working:',
+                title: 'Работа:',
                 detail: '',
               ),
               DetailsInfo(
-                title: 'Company name:',
+                title: 'Компания:',
                 detail: user.company.name,
               ),
               DetailsInfo(
@@ -99,7 +99,7 @@ class UserDetailsScreenWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Catch Phrase:',
+                    'Слоган:',
                     style: Theme.of(context).textTheme.headline2!.copyWith(
                           color: const Color(0xff000000),
                         ),
@@ -120,27 +120,27 @@ class UserDetailsScreenWidget extends StatelessWidget {
                 height: 40.0,
               ),
               const DetailsInfo(
-                title: 'Address:',
+                title: 'Адрес:',
                 detail: '',
               ),
               DetailsInfo(
-                title: 'City:',
+                title: 'Город:',
                 detail: user.address.city,
               ),
               DetailsInfo(
-                title: 'Street:',
+                title: 'Улица:',
                 detail: user.address.street,
               ),
               DetailsInfo(
-                title: 'Suite:',
+                title: 'Офис:',
                 detail: user.address.suite,
               ),
               DetailsInfo(
-                title: 'Geo:',
+                title: 'Координаты:',
                 detail: '${user.address.geo.lat}, ${user.address.geo.lng}',
               ),
               DetailsInfo(
-                title: 'Zip Code:',
+                title: 'Индекс:',
                 detail: user.address.zipcode,
               ),
               const SizedBox(
