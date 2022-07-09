@@ -11,11 +11,9 @@ class AlbumCardBloc extends Bloc<AlbumCardEvent, AlbumCardState> {
     on<GetImage>((event, emit) async {
       final internetConnect = await _client.internetChecker();
       if (internetConnect == true) {
-        print('internet yes Connect');
         emit(AlbumCardInternetConnect());
       }
       if (internetConnect == false) {
-        print('internet no Connect');
         emit(AlbumCardInternetNoConnect());
       }
     });
